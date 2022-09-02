@@ -19,7 +19,7 @@ const AboutUs = () => (
       </div>   
 
       <div className = "app__aboutus-content_knife">
-      <img src = {images.knife} alt = "spoon image" className = "spoon__img"/>
+      <img src = {images.knife} alt = "knife image" className = "spoon__img"/>
       </div>
 
       <div className = "app__aboutus-content_history">
