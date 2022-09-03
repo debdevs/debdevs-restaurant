@@ -57,12 +57,38 @@
 
 
 @media screen and (max-width: 2000px){
+    .app__specialMenu-menu_img {
+        width: 650px;
+        height: auto;
+    
+     
+       
+    }   
+    .app__specialMenu-menu_img img{
+        height: 920px;
+        width: auto;
+        
+      
+       
+    }   
 
 
 }
 
 
 @media screen and (max-width: 1150px){
+    .app__specialMenu-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+       
+    }   
+
+    .app__specialMenu-menu_img {
+        width: 100%;
+        margin: 3rem 0;
+       
+    }   
 
     
 }
@@ -71,10 +97,22 @@
 
 @media screen and (max-width: 650px){
 
-    .app__specialMenu-menu_img {
-        width: 100%;
+
+    .app__specialMenu-menu {
+        font-size: 35px;
+        line-height: 48.5px;
+
        
     }   
+
+    .app__specialMenu-menu_heading {
+        font-size: 35px;
+        line-height: 48.5px;
+
+       
+    }   
+      
+   
 }
 
 
