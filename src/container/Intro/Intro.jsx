@@ -1,5 +1,5 @@
 import React from 'react';
-import {bsFillPlayFill, BsPauseFill} from 'react-icons/bs'
+import {bsFillPlayFill, BsPauseFill, BsPlayFill} from 'react-icons/bs'
 import { MdVideoCameraFront } from 'react-icons/md';
 import {meal} from "../../constants";
 import './Intro.css';
@@ -12,7 +12,12 @@ const Intro = () => {
     setPlayVideo((prevPlayVideo) => !prevPlayVideo)
 
     if(playVideo) {
-   
+      vidRef.current.pause();
+    }
+    else
+    {
+      vidRef.current.play();
+
     }
   }
   return(
@@ -31,7 +36,9 @@ const Intro = () => {
       onClick = {handleVideo}
       
       >
-
+        {playVideo 
+          ?<BsPauseFill color = "fff" fontSize={30}/>
+        : <BsPlayFill color = "fff" fontSize={30}/>}
       </div>
     </div>
     
